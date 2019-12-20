@@ -1,5 +1,6 @@
 .cu-form-group {
-    background-image: linear-gradient(to right, #0081ff , #1cbbb4);
+    border: none;
+    background-image: linear-gradient(45deg, #0081ff, #1cbbb4);
     &:active {
         background-color: #ffffff;
     }
@@ -20,3 +21,4 @@
        padding-left: 20px !important;
    }
 }
+

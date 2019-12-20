@@ -1,0 +1,21 @@
+.top {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    display: flex;
+    margin-bottom: 10px;
+    .info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        .name {
+            color: #333333;
+            font-size: 44px;
+            margin-bottom: 16px;
+        }
+        .phone {
+            color: #999999;
+            font-size: 26px;
+        }
+    }
+}
