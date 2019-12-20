@@ -1,4 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
+import '@tarojs/async-await'
 import Index from './pages/index'
 
 import './app.scss'
@@ -18,31 +19,7 @@ class App extends Component {
       'pages/datas/index',
       'pages/my/index'
     ],
-    // tabBar: {
-    //   color: "#8a8a8a",
-    //   selectedColor: "#0081ff",
-    //   backgroundColor: "#FBFBFB",
-    //   borderStyle: "white",
-    //   list: [{
-    //     pagePath: "pages/index/index",
-    //     text: "待办",
-    //     iconPath: "../src/static/image/index.png",
-    //     selectedIconPath: "../src/static/image/selectedIndex.png"
-    //   },
-    //   {
-    //     pagePath: "pages/datas/index",
-    //     text: "数据分析",
-    //     iconPath: "../src/static/image/data.png",
-    //     selectedIconPath: "../src/static/image/selectedData.png"
-    //   },
-    //   {
-    //     pagePath: "pages/my/index",
-    //     text: "我的",
-    //     iconPath: "../src/static/image/my.png",
-    //     selectedIconPath: "../src/static/image/selectedMy.png"
-    //   }
-    // ]
-    // },
+   
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
