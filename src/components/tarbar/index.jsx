@@ -56,7 +56,7 @@ export default class Tarbar extends Component {
   ]
     return (
       <View>
-        <ClTabBar active={this.state.current} tabs={defaultTabs} fix='true' onClick={this.checkPage.bind(this)}/>
+        <ClTabBar active={this.state.current} tabs={defaultTabs}  fix='true' onClick={this.checkPage.bind(this)}/>
       </View>
     );
   }

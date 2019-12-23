@@ -13,9 +13,19 @@ export default class My extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      activeIndex: 0
+      activeIndex: 0,
+      isShowZw: false,
     }
   }
+
+  componentDidMount () {
+    if (process.env.TARO_ENV === 'weapp') {
+        this.setState({ isShowZw: true })
+    } else if (process.env.TARO_ENV === 'h5') {
+        this.setState({ isShowZw: false })
+    }
+  }
+
 
   render() {
     const headerArray = [
@@ -38,10 +48,14 @@ export default class My extends Component {
   ]
     return (
       <View>
+         {this.state.isShowZw && <View className='zw' style={{width: '100%', height: '30px', backgroundColor: '#ffffff'}}></View> }
         <View className='top'>
         <ClAvatar headerArray={headerArray.slice(0, 1)} shape='round' size='xlarge' shadow />
         <View className='info'>
-          <Text className='name'>梦涛 <ClTag tags={tags.slice(0, 1)} shape='normal' /></Text>
+          <Text className='nameAndSign'>
+            <Text className='name'>梦涛</Text>
+            <Text className='sign'><ClTag tags={tags.slice(0, 1)} shape='normal' /></Text>
+          </Text>
           <Text className='phone'>15188211507</Text>
         </View>
         </View>
@@ -52,11 +66,12 @@ export default class My extends Component {
           bgColor='white'
           activeColor='blue'
         >
-          {verbTabs.map(item => (
-            <View key={item.id} id={item.id}>
-              {item.text}
-            </View>
-          ))}
+         <View id='item1'>
+              ITEM1
+         </View>
+         <View id='item2'>
+              ITEM2
+         </View>
         </ClTabs>
 
         <Tarbar active={2} />
