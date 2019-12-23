@@ -48,10 +48,11 @@ export default class Index extends Component {
     const {activeIndex, value} = this.state
     return (
       <View className='index'>
-       <Header bgColor='gradualBlue' title='待审核'/>
+        <View className='zw' style={{width: '100%', height: '30px', backgroundColor: '#0081ff'}}></View>
+       <Header bgColor='blue' title='待审核'/>
        <ClSearchBar
           shape='round'
-          bgColor='gradualBlue'
+          bgColor='blue'
           rightButtonColor='black'
           rightTextColor='white'
           placeholder='请填写搜索内容'

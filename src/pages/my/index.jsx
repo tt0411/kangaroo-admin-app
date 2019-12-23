@@ -10,8 +10,8 @@ export default class My extends Component {
        navigationBarTitleText: '我的'
   }
 
-  constructor () {
-    super(...arguments)
+  constructor (props) {
+    super(props)
     this.state = {
       activeIndex: 0
     }

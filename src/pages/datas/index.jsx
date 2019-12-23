@@ -12,6 +12,7 @@ export default class Data extends Component {
   render() {
     return (
       <View>
+        <View className='zw' style={{width: '100%', height: '30px', backgroundImage: 'linear-gradient(45deg, #0081ff, #1cbbb4)'}}></View>
         <Header title='数据分析' bgColor='gradualBlue' />
         <Tarbar active={1}/>
       </View>

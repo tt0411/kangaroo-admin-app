@@ -2,6 +2,7 @@ import Taro , { Component } from '@tarojs/taro'
 import { View } from '@tarojs/components'
 import { ClNavBar } from "mp-colorui"
 
+
 export default class Header extends Component {
 
   render() {
